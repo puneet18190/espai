@@ -23,9 +23,42 @@
       <input type="hidden" id="user_id" value="<%= current_user.id %>">
       <% end %>
 
-    <div class="container">
+    <div class="row">
       <%= yield %>
     </div>
+
+    <footer class="site-footer">
+      <div class="legal">
+        <div class="container-fluid clearfix">
+          <div class="policies">
+            <ul class="list-inline">
+              <li><a href="">Help</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><%= link_to "About",about_path %></li>
+              <li><a href="">Terms</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a id="footer_link_facebook" href="https://www.facebook.com/peerspace/">
+                <span class="fa fa-facebook"></span>
+              </a></li>
+              <li><a id="footer_link_facebook" href="https://www.facebook.com/peerspace/">
+                <span class="fa fa-twitter"></span>
+              </a></li>
+              <li><a id="footer_link_facebook" href="https://www.facebook.com/peerspace/">
+                <span class="fa fa-instagram"></span>
+              </a></li>
+              <li><a id="footer_link_facebook" href="https://www.facebook.com/peerspace/">
+                <span class="fa fa-pinterest"></span>
+              </a></li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <ul class="list-inline">
+              <li>© 2017 Espai</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     </body>
     </html>

@@ -36,6 +36,7 @@ Rails.application.routes.draw do
   get '/your_reservations' => 'reservations#your_reservations'
 
   get 'search' => 'pages#search'
+  get 'about' => 'pages#about'
 
   # ---- AirKong ------
   get 'dashboard' => 'dashboards#index'

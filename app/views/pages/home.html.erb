@@ -1,7 +1,40 @@
-<div class="row">
+<div class="middleSection">
+   <div class="container  text-center white"> 
+    <div class="whiteline"></div>
+    <h1>Browse Unique Spaces around you by the hour or daily</h1>
+    <br />
+    <div class="row">
+      <div class="registarArea">
+        <%= form_tag search_path, method: :get,:class=>"form-inline" do %>
+        
+          <div class="form-group has-feedback">
+              <span class="fa fa-map-marker fa-2x form-control-feedback"></span>
+              <%= text_field_tag :search, params[:search], placeholder: "Where are you going?", class: "form-control customInput", id: "autolocation" %>
+          </div>
+          <div class="form-group has-feedback">
+              <span class="fa fa-calendar fa-2x form-control-feedback"></span>
+              <%= text_field_tag :start_date, params[:start_date], placeholder: "Start Date", class: "form-control customInput datepicker" %>
+              
+          </div>
+
+          <div class="form-group has-feedback">
+              <span class="fa fa-calendar fa-2x form-control-feedback"></span>
+              <%= text_field_tag :end_date, params[:end_date], placeholder: "End Date", class: "form-control customInput datepicker" %>
+          </div>
+
+          <button type="submit" class="btn btn-default searchBtn">Search</button>
+        <% end %>
+      </div>
+    </div>
+   </div> <!-- container -->
+</div>
+
+<!-- <div class="row">
+  <div class="col-md-3"></div>
   <div class="col-md-7 banner">
-    <h1><span class="text-red">AirKong</span> Book unique homes and experience a city like a local.</h1>
+    <h1>Browse Unique Spaces around you by the hour or daily</h1>
   </div>
+  <div class="col-md-2"></div>
 </div>
 
 <%= form_tag search_path, method: :get do %>
@@ -26,40 +59,63 @@
 <% end %>
 
 <br/><hr/><br/>
-
+ -->
 <!-- HOMES -->
-<div><h3>Homes</h3></div>
-<br/>
-
-<div class="row">
+<div class="container">
+  <div><h3>Available Spaces</h3></div>
+  <br/>
   <%= render partial: "rooms/rooms_list", locals: {rooms: @rooms} %>
 </div>
 
-<!-- CITIES -->
-<div><h3>Cities</h3></div>
-<br/>
 
-<div class="row">
-  <div class="col-md-3 col-sm-12">
-    <a href="http://localhost:3000/search?utf8=%E2%9C%93&search=los+angeles">
-      <div class="discovery-card" style="background-image: url('/assets/LA.jpg')"></div>
-    </a>
-  </div>
-  <div class="col-md-3 col-sm-12">
-    <a href="http://localhost:3000/search?utf8=%E2%9C%93&search=london">
-      <div class="discovery-card" style="background-image: url('/assets/LD.jpg')"></div>
-    </a>
-  </div>
-  <div class="col-md-3 col-sm-12">
-    <a href="http://localhost:3000/search?utf8=%E2%9C%93&search=paris">
-      <div class="discovery-card" style="background-image: url('/assets/PR.jpg')"></div>
-    </a>
-  </div>
-  <div class="col-md-3 col-sm-12">
-    <a href="http://localhost:3000/search?utf8=%E2%9C%93&search=miami">
-      <div class="discovery-card" style="background-image: url('/assets/MI.jpg')"></div>
-    </a>
-  </div>
+<!-- CITIES -->
+<div class="container">
+  <div><h3>Popular Activities</h3></div>
+  <br/>
+
+  <div class="workShop">
+    <div class="blackline"></div>
+      <div class="row text-center mt30">
+
+        <div class="col-sm-3 col-md-3">
+          <div class="thumbnail hvr-sink">
+            <%= image_tag "management-for-engineers.png",:class=>"img-responsive" %>
+            <div class="caption">
+               <h4>Weddings and Birthdays</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-md-3">
+          <div class="thumbnail hvr-sink">
+            <%= image_tag "managing-virtual-teams.png",:class=>"img-responsive" %>
+            <div class="caption">
+              <h4>Fitness classes</h4>
+            </div>
+          </div>
+       </div>
+
+        <div class="col-sm-3 col-md-3">
+          <div class="thumbnail hvr-sink">
+            <%= image_tag "global_leadership.png",:class=>"img-responsive" %>
+            <div class="caption">
+              <h4>Rent a chair</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-md-3">
+          <div class="thumbnail hvr-sink">
+            <%= image_tag "future.png",:class=>"img-responsive" %>
+            <div class="caption">
+             <h4>Garage and Storage</h4>       
+            </div>
+          </div>
+        </div>
+      </div><!-- End row -->
+    </div>  
+  </div> <!-- workshop -->
+
 </div>
 
 
