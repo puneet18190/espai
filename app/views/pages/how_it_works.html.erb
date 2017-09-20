@@ -1,0 +1,42 @@
+
+<div class="work_middle_section common_middle_class">
+   <div class="container  text-center white"> 
+    <div class="whiteline"></div>
+    <h1>HOW IT WORKS</h1>
+   </div> <!-- container -->
+</div>
+
+<div class="container margin_50">
+
+  <button class="accordion">Create a listing</button>
+  <div class="panel">
+    <p>Its free to list out your space. You determine your availability, and decide your hourly or daily pricing.</p>
+  </div>
+
+  <button class="accordion">Respond to inquiries and requests</button>
+  <div class="panel">
+    <p>We have made the process EASY. You will receive inquiries from qualified potential guests via email or sms (Your choice). When a booking request is submitted, you can easily respond and accept bookings.</p>
+  </div>
+
+  <button class="accordion">Get Paid. You deserve it</button>
+  <div class="panel">
+    <p>We got you. We would collect the payment and transfer into your account.</p>
+  </div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>

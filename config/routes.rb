@@ -37,6 +37,11 @@ Rails.application.routes.draw do
 
   get 'search' => 'pages#search'
   get 'about' => 'pages#about'
+  get 'contact_us' => 'pages#contact_us'
+  post 'contact_submit' => 'pages#contact_create'
+  get 'how_it_works' => 'pages#how_it_works'
+  get 'terms' => 'pages#terms'
+  get 'conditions' => 'pages#conditions'
 
   # ---- AirKong ------
   get 'dashboard' => 'dashboards#index'

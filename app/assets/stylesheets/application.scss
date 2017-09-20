@@ -557,18 +557,21 @@ a {
 
 /* Banner */
 .middleSection{
-  background-image: url("banner.jpg");
-  background-size: 100% 100%;
+  background-image: url("home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   height: 450px;
   width: 100%;
   padding-top: 100px;
 }
-.middleSection h1{
+.middleSection h1,.work_middle_section h1{
   font-weight: 500;
   font-size: 45px;
+  text-shadow: 2px 2px black;
   margin-bottom: 0 !important;
 }
-.middleSection p{
+.middleSection p,.work_middle_section p{
    font-family: 'CircularStd-Book';
    margin-top: 0 !important;
    font-size: 30px;
@@ -804,15 +807,33 @@ a {
   padding-right: 0 !important;
   padding-left: 0 !important;
 }
+.work_middle_section{
+  background-image: url(work1.jpg);
+}
+.term_middle_section{
+  background-image: url(term.jpg);
+}
+.common_middle_class{
+  height: 450px;
+  width: 100%;
+  padding-top: 175px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 @media (min-width:1200px){.container{width:1170px}}
 @media only screen and (max-width: 767px){
-.middleSection{
+.middleSection,.work_middle_section{
   padding-top: 40px;
   background-size: auto 100%;
 }
 
 .middleSection h1{
   font-size: 25px;
+}
+.work_middle_section h1{
+  font-size: 40px;
 }
 .registarArea {
     padding-left: inherit !important;
@@ -822,10 +843,10 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 991px){
-.middleSection{
+.middleSection,.work_middle_section h1{
   padding-top: 60px;
 }
-.middleSection h1{
+.middleSection h1,.work_middle_section h1{
   font-size: 25px;
 }
 
@@ -833,4 +854,41 @@ a {
   margin-bottom: 10px;
 }
 
+}
+/* Accordin section */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+button.accordion.active:after {
+    content: "\2212";
+}
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border: 0 !important
+}
+.margin_50{
+  margin-top: 50px;
 }

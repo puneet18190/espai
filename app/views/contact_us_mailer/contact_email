@@ -1,0 +1,7 @@
+Hey
+<br/>
+<%= @from %> wants to contact with you. His email address is <%= @email %>
+Message is:-
+<%= @message %>
+<br/>
+AirKong Team.

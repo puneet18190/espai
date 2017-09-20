@@ -51,4 +51,18 @@ class PagesController < ApplicationController
 
   def about
   end
+
+  def contact_us
+  end
+
+  def contact_create
+    name = params[:name]
+    email = params[:email]
+    message = params[:message]
+    ContactUsMailer.contact_email(name,email,message).deliver_now!
+    redirect_to contact_us_path, notice: "Message Send"
+  end
+
+  def how_it_works
+  end
 end
