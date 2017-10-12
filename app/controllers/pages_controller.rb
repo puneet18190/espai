@@ -65,4 +65,10 @@ class PagesController < ApplicationController
 
   def how_it_works
   end
+
+  def terms
+  end
+
+  def conditions
+  end
 end

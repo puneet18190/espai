@@ -103,12 +103,7 @@ a {
 }
 
 // PANELS
-.panel-default .panel-heading {
-  color: #ffffff;
-  background-color: #00A699;
-  font-size: 18px;
-  font-weight: 400;
-}
+
 
 .row-space-1 {
   margin-top: 6px;
@@ -813,6 +808,9 @@ a {
 .term_middle_section{
   background-image: url(term.jpg);
 }
+.about_middle_section{
+  background-image: url(about.jpeg);
+}
 .common_middle_class{
   height: 450px;
   width: 100%;
@@ -881,13 +879,22 @@ button.accordion:after {
 button.accordion.active:after {
     content: "\2212";
 }
-div.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    border: 0 !important
+.home-tiles {
+    box-shadow: 5px 5px 3px #D6D6D6;
+    padding-bottom: 2rem;
+}
+.home-tiles, .home-tiles2 {
+    background: #fff;
+    margin-bottom: 2.5rem;
+}
+.container-fluid:after, .container-fluid:before, .container:after, .container:before, .row:after, .row:before {
+    display: table;
+    content: " ";
+}
+.why-head {
+    padding: 3rem 0;
+    position: relative;
+    right: 6rem;
 }
 .margin_50{
   margin-top: 50px;
