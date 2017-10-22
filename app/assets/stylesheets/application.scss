@@ -895,7 +895,26 @@ button.accordion.active:after {
     padding: 3rem 0;
     position: relative;
     right: 6rem;
+    color: #535353;
+    font-size: 2.5rem;
+    display: block;
+    text-align: center;
 }
 .margin_50{
   margin-top: 50px;
+}
+.col-lg-15, .col-md-15, .col-sm-15, .col-xs-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.top30{
+  margin-top: 30px;
+}
+@media (min-width: 992px){
+  .col-md-15 {
+    width: 20%;
+    float: left;
+  }
 }
