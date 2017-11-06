@@ -5,6 +5,11 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable, :omniauthable
 
+  has_attached_file :avatar, styles: { small: "64x64", med: "100x100", large: "200x200" }
+  validates_attachment_content_type :avatar, 
+                                    :content_type => /^image\/(png|gif|jpeg)/,
+                                    :message => 'only (png/gif/jpeg) images'
+
   validates :fullname, presence: true, length: {maximum: 50}
 
   has_many :rooms
