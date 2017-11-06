@@ -42,6 +42,7 @@ Rails.application.routes.draw do
   get 'how_it_works' => 'pages#how_it_works'
   get 'terms' => 'pages#terms'
   get 'conditions' => 'pages#conditions'
+  get 'use' => 'pages#use'
 
   # ---- AirKong ------
   get 'dashboard' => 'dashboards#index'

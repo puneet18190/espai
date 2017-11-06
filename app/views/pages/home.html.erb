@@ -99,60 +99,65 @@
 
 <!-- HOMES -->
 <div class="container">
-  <div><h3>Available Spaces</h3></div>
-  <br/>
-  <%= render partial: "rooms/rooms_list", locals: {rooms: @rooms} %>
+  <div class="container home-tiles">
+    <span class="why-head" style="right:0px"><b>Available Spaces</b>&nbsp; 
+    </span>
+    <div class="col-md-12 no-padding"> 
+      <%= render partial: "rooms/rooms_list", locals: {rooms: @rooms} %>
+    </div>
+  </div>
 </div>
 
 
 <!-- CITIES -->
 <div class="container">
-  <div><h3>Book a space for your next event or activity</h3></div>
-  <br/>
+  <div class="container home-tiles">
+    <span class="why-head" style="right:0px"><b>Book a space for your next event or activity</b>&nbsp; 
+    </span>
+    <div class="col-md-12 no-padding">
+      <div class="workShop">
+        <div class="blackline"></div>
+          <div class="row text-center">
 
-  <div class="workShop">
-    <div class="blackline"></div>
-      <div class="row text-center mt30">
-
-        <div class="col-sm-3 col-md-3">
-          <div class="thumbnail hvr-sink">
-            <%= image_tag "wedding.jpg",:class=>"img-responsive" %>
-            <div class="caption">
-               <h4>Weddings and Birthdays</h4>
+            <div class="col-sm-3 col-md-3">
+              <div class="thumbnail hvr-sink">
+                <%= image_tag "wedding.jpg",:class=>"img-responsive" %>
+                <div class="caption">
+                   <h4>Weddings and Birthdays</h4>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="col-sm-3 col-md-3">
-          <div class="thumbnail hvr-sink">
-            <%= image_tag "yoga.jpg",:class=>"img-responsive" %>
-            <div class="caption">
-              <h4>Fitness classes</h4>
+            <div class="col-sm-3 col-md-3">
+              <div class="thumbnail hvr-sink">
+                <%= image_tag "yoga.jpg",:class=>"img-responsive" %>
+                <div class="caption">
+                  <h4>Fitness classes</h4>
+                </div>
+              </div>
             </div>
-          </div>
-       </div>
 
-        <div class="col-sm-3 col-md-3">
-          <div class="thumbnail hvr-sink">
-            <%= image_tag "chair.jpg",:class=>"img-responsive" %>
-            <div class="caption">
-              <h4>Rent a chair</h4>
+            <div class="col-sm-3 col-md-3">
+              <div class="thumbnail hvr-sink">
+                <%= image_tag "chair.jpg",:class=>"img-responsive" %>
+                <div class="caption">
+                  <h4>Rent a chair</h4>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="col-sm-3 col-md-3">
-          <div class="thumbnail hvr-sink">
-            <%= image_tag "stock.jpg",:class=>"img-responsive" %>
-            <div class="caption">
-             <h4>Garage and Storage</h4>       
+            <div class="col-sm-3 col-md-3">
+              <div class="thumbnail hvr-sink">
+                <%= image_tag "stock.jpg",:class=>"img-responsive" %>
+                <div class="caption">
+                 <h4>Garage and Storage</h4>       
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div><!-- End row -->
-    </div>  
-  </div> <!-- workshop -->
-
+          </div><!-- End row -->
+        </div>  
+      </div> <!-- workshop -->
+  </div>
 </div>
 
 

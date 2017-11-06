@@ -71,4 +71,7 @@ class PagesController < ApplicationController
 
   def conditions
   end
+
+  def use
+  end
 end

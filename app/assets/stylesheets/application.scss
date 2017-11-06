@@ -614,7 +614,7 @@ a {
 /******** Workshop *******/
 .workShop{
     padding-bottom: 30px;
-    background: #F5F5F5;
+    background: white;
 }
 .workShop .workheading{
     letter-spacing: 2px;
@@ -917,4 +917,18 @@ button.accordion.active:after {
     width: 20%;
     float: left;
   }
+}
+.accord > .panel{
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border: 0 !important;
+}
+.panel .container{
+  width: inherit;
+}
+#user_avatar{
+  padding-top: 9px;
 }
