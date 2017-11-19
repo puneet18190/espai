@@ -12,9 +12,7 @@ class RoomsController < ApplicationController
   end
 
   def create
-    if !current_user.is_active_host
-      return redirect_to payout_method_path, alert: "Please Connect to Stripe Express first."
-    end
+    
 
     @room = current_user.rooms.build(room_params)
     if @room.save
@@ -100,6 +98,6 @@ class RoomsController < ApplicationController
     end
 
     def room_params
-      params.require(:room).permit(:home_type, :room_type, :accommodate, :bed_room, :bath_room, :listing_name, :summary, :address, :is_tv, :is_kitchen, :is_air, :is_heating, :is_internet, :price, :active, :instant)
+      params.require(:room).permit(:home_type, :room_type, :accommodate,:space_type, :bed_room, :bath_room, :listing_name, :summary, :address, :is_tv, :is_kitchen, :is_air, :is_heating, :is_internet, :price, :active, :instant)
     end
 end

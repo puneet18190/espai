@@ -5,6 +5,7 @@ class PhotosController < ApplicationController
 
     if params[:images]
       params[:images].each do |img|
+        byebug
         @room.photos.create(image: img)
       end
 

@@ -2,6 +2,7 @@
 @import "bootstrap";
 @import "toastr";
 @import "fullcalendar";
+@import "room";
 
 body {
   color: #565a5c;
@@ -68,10 +69,12 @@ a {
   padding: 10px 0;
   margin-top: 10px;
 }
-
+.amenities-label .fa{
+  color: #00a699;
+}
 .btn.btn-normal {
-  border: 1px solid #ff5a5f;
-  background-color: #ff5a5f;
+  border: 1px solid #00a699;
+  background-color: #00a699;
 }
 
 .btn.btn-normal:active {
@@ -931,4 +934,11 @@ button.accordion.active:after {
 }
 #user_avatar{
   padding-top: 9px;
+}
+.no_padding{
+  padding: 0;
+}
+.no_padding_mg5{
+  padding: 0;
+  padding-left: 5px;
 }

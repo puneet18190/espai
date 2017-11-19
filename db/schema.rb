@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171106224155) do
+ActiveRecord::Schema.define(version: 20171112174202) do
 
   create_table "calendars", force: :cascade do |t|
     t.date     "day"
@@ -110,6 +110,7 @@ ActiveRecord::Schema.define(version: 20171106224155) do
     t.float    "latitude"
     t.float    "longitude"
     t.integer  "instant",      default: 1
+    t.string   "space_type"
     t.index ["user_id"], name: "index_rooms_on_user_id"
   end
 
