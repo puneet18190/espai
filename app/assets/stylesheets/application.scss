@@ -639,7 +639,9 @@ a {
     font-size: 16px;
     text-transform: uppercase; 
 }
-
+.thumbnail > img, .thumbnail a > img{
+  max-height: 174px;
+}
 
 
 
