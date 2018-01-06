@@ -62,3 +62,11 @@
 
     </body>
     </html>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    if($(window).height() > $(".site-footer").offset().top){
+      $(".site-footer").css("position", "absolute").css("bottom",0).css("width","100%")
+    }
+  })
+</script>

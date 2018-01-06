@@ -45,20 +45,20 @@
 
   <button class="accordion">You explicitly agree, in using this web site or any service provided, that you shall not:</button>
   <div class="panel">
-    <p>(a) Provide any Content or perform any conduct that may be unlawful, illegal, threatening, harmful, abusive, harassing, stalking, tortuous, defamatory, libelous, vulgar, obscene, offensive, objectionable, pornographic, designed to or does interfere or interrupt this web site or any service provided, infected with a virus or other destructive or deleterious programming routine, give rise to civil or criminal liability, or which may violate an applicable local, national or international law;
+    <p>(a) Provide any Content or perform any conduct that may be unlawful, illegal, threatening, harmful, abusive, harassing, stalking, tortuous, defamatory, libelous, vulgar, obscene, offensive, objectionable, pornographic, designed to or does interfere or interrupt this web site or any service provided, infected with a virus or other destructive or deleterious programming routine, give rise to civil or criminal liability, or which may violate an applicable local, national or international law;<br>
 
-    (b) Impersonate or misrepresent your association with any person or entity, or forge or otherwise seek to conceal or misrepresent the origin of any Content provided by you;
+    (b) Impersonate or misrepresent your association with any person or entity, or forge or otherwise seek to conceal or misrepresent the origin of any Content provided by you;<br>
 
-    (c) Collect or harvest any data about other users;
+    (c) Collect or harvest any data about other users;<br>
 
-    (d) Provide or use this web site and any Content or service in any commercial manner or in any manner that would involve junk mail, spam, chain letters, pyramid schemes, or any other form of unauthorized advertising without our prior written consent;
+    (d) Provide or use this web site and any Content or service in any commercial manner or in any manner that would involve junk mail, spam, chain letters, pyramid schemes, or any other form of unauthorized advertising without our prior written consent;<br>
 
-    (e) Provide any Content that may give rise to our civil or criminal liability or which may constitute or be considered a violation of any local, national or international law, including but not limited to laws relating to copyright, trademark, patent, or trade secrets.
+    (e) Provide any Content that may give rise to our civil or criminal liability or which may constitute or be considered a violation of any local, national or international law, including but not limited to laws relating to copyright, trademark, patent, or trade secrets.<br>
 
-    Submission of Content on this Site
+    Submission of Content on this Site<br>
     By providing any Content to our web site you agree to all of the following statements listed below:
-    (a) You agree to grant to us a worldwide, royalty-free, perpetual, non-exclusive right and license (including any moral rights or other necessary rights) to use, display, reproduce, modify, adapt, publish, distribute, perform, promote, archive, translate, and to create derivative works and compilations, in whole or in part. Such license will apply with respect to any form, media, and technology known or later developed;
-    (b) you warrant and represent that you have all legal, moral, and other rights that may be necessary to grant us with the license set forth;
+    (a) You agree to grant to us a worldwide, royalty-free, perpetual, non-exclusive right and license (including any moral rights or other necessary rights) to use, display, reproduce, modify, adapt, publish, distribute, perform, promote, archive, translate, and to create derivative works and compilations, in whole or in part. Such license will apply with respect to any form, media, and technology known or later developed;<br>
+    (b) you warrant and represent that you have all legal, moral, and other rights that may be necessary to grant us with the license set forth;<br>
     (c) you acknowledge and agree that we shall have the right (but not obligation), in our sole discretion, to refuse to publish or to remove or block access to any Content you provide at any time and for any reason, with or without notice.</p>
   </div>
 
@@ -130,11 +130,13 @@
 
   <button class="accordion">Miscellaneous Information</button>
   <div class="panel">
-    <p>(i) In the event that this Terms of Service conflicts with any law under which any provision may be held invalid by a court with jurisdiction over the parties, such provision will be interpreted to reflect the original intentions of the parties in accordance with applicable law, and the remainder of this Terms of Service will remain valid and intact; 
+    <p>(i) In the event that this Terms of Service conflicts with any law under which any provision may be held invalid by a court with jurisdiction over the parties, such provision will be interpreted to reflect the original intentions of the parties in accordance with applicable law, and the remainder of this Terms of Service will remain valid and intact; <br>
 
-    (ii) The failure of either party to assert any right under this Terms of Service shall not be considered a waiver of any that party's right and that right will remain in full force and effect; 
+    (ii) The failure of either party to assert any right under this Terms of Service shall not be considered a waiver of any that party's right and that right will remain in full force and effect; <br>
 
-    (iii) You agree that without regard to any statue or contrary law that any claim or cause arising out of this web site or its services must be filed within one (1) year after such claim or cause arose or the claim shall be forever barred; (iv) We may assign our rights and obligations under this Terms of Service and we shall be relieved of any further obligation. 
+    (iii) You agree that without regard to any statue or contrary law that any claim or cause arising out of this web site or its services must be filed within one (1) year after such claim or cause arose or the claim shall be forever barred; <br>
+
+    (iv) We may assign our rights and obligations under this Terms of Service and we shall be relieved of any further obligation. 
      This Agreement was last modified on September, 2017</p>
   </div>
 
@@ -150,8 +152,11 @@ for (i = 0; i < acc.length; i++) {
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
+      panel.style.padding = null;
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+      // panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.maxHeight = "100%";
+      panel.style.padding = "15px"
     } 
   }
 }
