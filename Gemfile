@@ -6,7 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails', '~> 5.0.3'
-gem 'sqlite3'
+gem 'sqlite3', group: :development
+gem 'pg', group: :production
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -34,8 +35,8 @@ gem 'devise', '~> 4.2'
 
 gem 'toastr-rails', '~> 1.0'
 
-gem 'omniauth', '~> 1.6'
-gem 'omniauth-facebook', '~> 4.0'
+gem 'omniauth'#, '~> 1.6'
+gem 'omniauth-facebook'#, '~> 4.0'
 
 gem 'paperclip', '~> 5.1.0'
 gem 'aws-sdk', '~> 2.8'
@@ -55,4 +56,4 @@ gem 'rails-assets-card', source: 'https://rails-assets.org'
 
 gem 'omniauth-stripe-connect', '~> 2.10.0'
 
-gem 'chartkick', '~> 2.2.4'
+gem 'chartkick'#, '~> 2.2.4'
