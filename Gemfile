@@ -8,6 +8,7 @@ end
 gem 'rails', '~> 5.0.3'
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
+gem 'rails_12factor'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
