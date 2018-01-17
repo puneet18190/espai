@@ -59,3 +59,6 @@ gem 'omniauth-stripe-connect', '~> 2.10.0'
 
 gem 'chartkick'#, '~> 2.2.4'
 gem 'redis'
+gem 'rails_db_info'
+gem 'paperclip-cloudinary'
+gem 'pry'

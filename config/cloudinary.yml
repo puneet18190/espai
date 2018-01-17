@@ -1,0 +1,18 @@
+development:
+  cloud_name: dpzeylc87
+  api_key: '453633732885888'
+  api_secret: kQX541vantBb4t1ZWQ679EhmbC8
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dpzeylc87
+  api_key: '453633732885888'
+  api_secret: kQX541vantBb4t1ZWQ679EhmbC8
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dpzeylc87
+  api_key: '453633732885888'
+  api_secret: kQX541vantBb4t1ZWQ679EhmbC8
+  enhance_image_tag: true
+  static_image_support: false
