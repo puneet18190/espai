@@ -24,12 +24,12 @@
     <% end %>
 
     <div class="row">
-      <%= yield %>
+      <%#= yield %>
     </div>
 
     <footer class="site-footer">
-      <div class="legal">
-        <div class="container-fluid clearfix">
+      <div class="legal" style="background-color: #00A699;color: white">
+        <div class="container-fluid clearfix" style="padding-left: 20%;padding-right: 20%">
           <div class="policies">
             <ul class="list-inline">
               <li><%= link_to "How it works",how_it_works_path %></li>
@@ -37,7 +37,7 @@
               <li><%= link_to "About",about_path %></li>
               <li><%= link_to "Terms and Conditions",terms_path %></li>
               <li><%= link_to "Terms to use",use_path %></li>
-              <li><a id="footer_link_facebook" href="https://www.facebook.com/peerspace/">
+              <!-- <li><a id="footer_link_facebook" href="https://www.facebook.com/peerspace/">
                 <span class="fa fa-facebook"></span>
               </a></li>
               <li><a id="footer_link_facebook" href="https://www.facebook.com/peerspace/">
@@ -48,12 +48,12 @@
               </a></li>
               <li><a id="footer_link_facebook" href="https://www.facebook.com/peerspace/">
                 <span class="fa fa-pinterest"></span>
-              </a></li>
+              </a></li> -->
             </ul>
           </div>
           <div class="copyright">
             <ul class="list-inline">
-              <li>© 2017 Espai</li>
+              <li>© 2018 Espai</li>
             </ul>
           </div>
         </div>
@@ -70,3 +70,8 @@
     }
   })
 </script>
+<style type="text/css">
+  .site-footer .list-inline a{
+    color: white
+  }
+</style>
